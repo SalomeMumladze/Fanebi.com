@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title {
+  @apply text-black font-semibold text-xs text-sm xs:text-tiny xs:leading-tiny;
+}
+.title-mob {
+  @apply text-black font-semibold leading-md mx-10 text-base my-10;
+}
+
+.input {
+  @apply h-40 bg-lightGray rounded-4 py-5 px-10 flex justify-between mx-12 sm:mx-0 md:mx-4;
+}
+
+.input-sm {
+  @apply h-40 bg-lightGray rounded-4 py-5 px-10 flex justify-between md:mx-4;
+}
