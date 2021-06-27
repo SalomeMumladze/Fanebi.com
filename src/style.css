@@ -2,11 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-.title {
-  @apply text-black font-semibold text-xs text-sm xs:text-tiny xs:leading-tiny;
+.nav-title {
+  @apply text-black font-semibold text-xs text-sm xs:text-xs xs:leading-tiny;
 }
-.title-mob {
+.nav-title-mob {
   @apply text-black font-semibold leading-md mx-10 text-base my-10;
+}
+
+.section-text {
+  @apply mb-7 text-xl text-black font-bold;
+}
+.section-title {
+  @apply font-normal text-sm text-lightGray;
+}
+.active-title {
+  @apply text-redPall font-normal text-sm font-bold;
 }
 
 .input {
@@ -15,4 +25,20 @@
 
 .input-sm {
   @apply h-40 bg-lightGray rounded-4 py-5 px-10 flex justify-between md:mx-4;
+}
+
+.desc {
+  @apply font-normal leading-sm text-sm text-lightGray;
+}
+
+.verbatim-desc {
+  @apply font-normal leading-sm text-sm text-black;
+}
+
+.caption {
+  @apply text-xs text-whitePall leading-14 font-normal;
+}
+
+.footoer-txt {
+  @apply text-xs leading-8 font-normal text-grayPall;
 }
