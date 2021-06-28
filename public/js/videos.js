@@ -76,7 +76,7 @@ let videos = [
 document.getElementById("videos").innerHTML = videos
   .map(
     (video) => `  
-     <a class="m-auto h-36 cursor-pointer relative w-155">
+     <a class="m-auto h-36 cursor-pointer relative w-40">
         <img src=${video.img} />
         <img class="absolute top-7 right-40" src="svg/Play.svg"/>
         <span class="absolute left-1.5 top-16 text-white text-tiny bg-dark rounded text-center h-4 w-8">${video.time}</span>

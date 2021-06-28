@@ -33,3 +33,7 @@
   .carousel-bullet {
   color: #e71d25; /*Set to match the Tailwind colour you want the active one to be */
 }
+
+html {
+  background: #F5F8FA;
+}

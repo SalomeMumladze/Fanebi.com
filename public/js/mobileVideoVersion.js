@@ -28,7 +28,7 @@ let mobiles = [
 document.getElementById("mobVideos").innerHTML = mobiles
   .map(
     (mobile) => `  
-     <a class="m-auto h-36 cursor-pointer relative w-155">
+     <a class="m-auto h-36 cursor-pointer relative w-40">
         <img src=${mobile.img} />
         <img class="absolute top-7 right-40" src="svg/PlayRed.svg"/>
         <span class="absolute left-1.5 top-16 text-white text-tiny bg-dark rounded text-center h-4 w-8">${mobile.time}</span>

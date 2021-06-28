@@ -20,11 +20,11 @@
 }
 
 .input {
-  @apply h-40 bg-lightGray rounded-4 py-5 px-10 flex justify-between mx-12 sm:mx-0 md:mx-4;
+  @apply h-10 bg-lightGray rounded-4 py-5 px-10 flex justify-between;
 }
 
 .input-sm {
-  @apply h-40 bg-lightGray rounded-4 py-5 px-10 flex justify-between md:mx-4;
+  @apply h-10 bg-lightGray rounded-4 py-5 px-10 flex justify-between;
 }
 
 .desc {
