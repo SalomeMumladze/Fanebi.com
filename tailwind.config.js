@@ -50,7 +50,4 @@ module.exports = {
   plugins: [],
 };
 
-//delete to much things
-//add maxos screen size
-//change colors
-//input icon and placholder did not shown in newIndex.html
+
