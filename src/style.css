@@ -3,42 +3,42 @@
 @tailwind utilities;
 
 .nav-title {
-  @apply text-black font-semibold text-xs text-sm xs:text-xs xs:leading-tiny;
+  @apply text-black font-semibold text-sm xs:leading-tiny;
 }
 .nav-title-mob {
-  @apply text-black font-semibold leading-md mx-10 text-base my-10;
+  @apply text-black font-semibold leading-5  text-base m-2.5;
 }
 
 .section-text {
   @apply mb-7 text-xl text-black font-bold;
 }
 .section-title {
-  @apply font-normal text-sm text-lightGray;
+  @apply font-normal text-sm;
 }
 .active-title {
   @apply text-redPall font-normal text-sm font-bold;
 }
 
 .input {
-  @apply h-10 bg-lightGray rounded-4 py-5 px-10 flex justify-between;
+  @apply h-10 rounded py-0.5 px-2.5 flex justify-between;
 }
 
 .input-sm {
-  @apply h-10 bg-lightGray rounded-4 py-5 px-10 flex justify-between;
+  @apply h-10  rounded py-0.5 px-2.5 flex justify-between;
 }
 
 .desc {
-  @apply font-normal leading-sm text-sm text-lightGray;
+  @apply font-normal leading-5 text-sm;
 }
 
 .verbatim-desc {
-  @apply font-normal leading-sm text-sm text-black;
+  @apply font-normal leading-5 text-sm text-black;
 }
 
 .caption {
-  @apply text-xs text-whitePall leading-14 font-normal;
+  @apply text-xs leading-3 font-normal;
 }
 
-.footoer-txt {
-  @apply text-xs leading-8 font-normal text-grayPall;
+.footer-txt {
+  @apply text-sm leading-8 font-normal ;
 }

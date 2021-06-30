@@ -35,5 +35,14 @@
 }
 
 html {
-  background: #F5F8FA;
+  background: #f5f8fa;
+}
+.input,
+.input-sm {
+  background: #f5f8fa;
+}
+
+.section-title,
+.desc {
+  color: #808080;
 }

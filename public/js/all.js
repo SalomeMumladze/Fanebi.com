@@ -82,7 +82,7 @@ document.getElementById("all").innerHTML = newthings
   <h2 class="desc videoResSm:block xxs:hidden">${newthing.desc}</h2>
   <div class="flex items-center">
     <img class="mr-1.5 " src="img/Clock.png"/>
-    <h2 class="caption">${newthing.caption}</h2>
+    <h2 class="caption" style="color: #B2B2B2">${newthing.caption}</h2>
   </div>
 </div>
 </a>`
