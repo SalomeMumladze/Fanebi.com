@@ -2,17 +2,17 @@
   <head>
     <meta charset="UTF-2" />
     <meta name="viewport" content="width=device-width, initial-sclae=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../carousel.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../carousel.css" />
     <title>Fanebi.com</title>
   </head>
   <body>
     <div class="bg-white">
         <div class="mx-auto lg:container max-w-full bg-white">
             <div class="flex flex-wrap flex-row justify-between relative">
-                <div class="bg-black w-full flex items-center">
+                <div class="w-full flex items-center">
                     <div class="h-28 w-full bg-white flex items-center m-auto">
-                    <a href="#"><img src="../svg/logo.svg" /></a>
+                    <a href="#"><img src="../../svg/logo.svg" /></a>
                     <div class="ml-auto flex justify-between items-center xs:hidden">
                         <ul class="flex">
                             <li class="nav-title mx-2.5 sm:ml-0">
@@ -35,24 +35,24 @@
                             </li>
                         </ul>
                         <div class="input">
-                            <img class="p-1.5" src="../svg/search.svg" />
+                            <img class="p-1.5" src="../../svg/search.svg" />
                             <input class="bg-transparent text-sm  border border-transparent focus:outline-none" placeholder="ძიება"></input>
                         </div> 
                         <a href="#facebook" class="py-5 px-2.5">
-                            <img src="../svg/fc.svg" />
+                            <img src="../../svg/fc.svg" />
                         </a>
                     </div>
                         <div class="hidden xs:block ml-auto"  x-data="{ mobileMenuOpen : false }" >
                         <div class="flex items-center justify-center">
                         <div class="input-sm">
-                            <img class="p-1.5" src="../svg/search.svg" />
+                            <img class="p-1.5" src="../../svg/search.svg" />
                             <input class="bg-transparent text-sm w-52 xxs:w-0 md:w-44 border border-transparent focus:outline-none" placeholder="ძიება"></input>
                         </div> 
                         <a class="mx-8 xs:mx-4" href="#facebook">
-                            <img class="w-30 h-30" src="../svg/fc-mobile.svg" />
+                            <img class="w-30 h-30" src="../../svg/fc-mobile.svg" />
                         </a>
                             <button @click="mobileMenuOpen = !mobileMenuOpen" class="border border-transparent focus:outline-none inline-block md:hidden w-8 h-8">
-                            <img class="w-30 h-30 " src="../svg/menu.svg"/> 
+                            <img class="w-30 h-30 " src="../../svg/menu.svg"/> 
                             </button>
                             <nav class="absolute md:relative top-24 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white rounded-lg md:rounded-none md:bg-transparent pt-0 md:p-0"
                             :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}"  @click.away="mobileMenuOpen = false"
@@ -64,31 +64,31 @@
                                 <li>
                                     <button class="focus:outline-none flex items-center w-full">
                                     <h2 class="nav-title-mob" href="#">ფეხბურთი</h2>
-                                    <img class="ml-auto" src="../img/arrow.png">
+                                    <img class="ml-auto" src="../../img/arrow.png">
                                     </button>
                                 </li>
                                 <li>
                                 <button class="focus:outline-none flex items-center w-full">
                                     <h2 class="nav-title-mob" href="#">კალათბურთი</h2>
-                                    <img class="ml-auto" src="../img/arrow.png">
+                                    <img class="ml-auto" src="../../img/arrow.png">
                                     </button>
                                 </li>
                                 <li>
                                     <button class="focus:outline-none flex items-center w-full" onclick="showWishlist()" >
                                     <h2 class="nav-title-mob" id="nav_title" href="#">რაგბი</h2>
-                                    <img class="ml-auto" id="arrow" src="../img/arrow.png">
+                                    <img class="ml-auto" id="arrow" src="../../img/arrow.png">
                                     </button>
                                     <ul class="ml-8" style="display: none;" id="list_box">
                                     <li>
                                         <button class="focus:outline-none flex items-center w-full">
-                                        <img src="../img/geFlag.png"/>
+                                        <img src="../../img/geFlag.png"/>
                                         <a class="nav-title-mob">საქართველო</a>
-                                        <img class="ml-auto" src="../img/arrow.png">
+                                        <img class="ml-auto" src="../../img/arrow.png">
                                         </button>
                                     </li>
                                     <li>
                                         <button class="focus:outline-none flex items-center w-full">
-                                        <img src="../img/europeanFlag.png"/>
+                                        <img src="../../img/europeanFlag.png"/>
                                         <a class="nav-title-mob">საერთაშორისო</a>
                                         </button>
                                     </li>
@@ -97,31 +97,31 @@
                                 <li>
                                 <button class="focus:outline-none flex items-center w-full">
                                     <h2 class="nav-title-mob" href="#">სხვადასხვა</h2>
-                                    <img class="ml-auto" src="../img/arrow.png">
+                                    <img class="ml-auto" src="../../img/arrow.png">
                                 </button>
                                 </li>
                                 <li>
                                 <button class="focus:outline-none flex items-center w-full">
                                     <h2 class="nav-title-mob" href="#">ვიდეო</h2>
-                                    <img class="ml-auto" src="../img/arrow.png">
+                                    <img class="ml-auto" src="../../img/arrow.png">
                                 </button>
                                 </li>
                                 <li>
                                 <button class="focus:outline-none flex items-center w-full">
                                     <h2 class="nav-title-mob" href="#">ტრანსფერები</h2>
-                                    <img class="ml-auto" src="../img/arrow.png">
+                                    <img class="ml-auto" src="../../img/arrow.png">
                                 </button>
                                 </li>
                             </ul>
                             <div class="flex space-x-4 mx-2.5 bottom-3.5 mt-8 mb-3.5">
                                 <a>
-                                <img src="../img/Social Network Icons.png"/>
+                                <img src="../../img/Social Network Icons.png"/>
                                 </a>
                                 <a>
-                                <img src="../img/Instagram.png"/>
+                                <img src="../../img/Instagram.png"/>
                                 </a>
                                 <a>
-                                <img src="../img/Youtube.png"/>
+                                <img src="../../img/Youtube.png"/>
                                 </a>
                             </div>
                             </div>
@@ -139,16 +139,16 @@
         <div class="grid grid-cols-3 gap-8 sm:gap-4 sm:grid-cols-1">
             <div class="col-span-2">
                 <div class="bg-white">
-                    <img class="w-full" src="../img/Rectangle 7.png" />
+                    <img class="w-full" src="../../img/Rectangle 7.png" />
                     <div class="px-8 pb-5">
                         <h2 class="text-black font-semibold text-2xl leading-loose">ქართველი მსაჯები 21-წლამდე ევროპის ჩემპიონატის ფინალს იმსაჯებენ</h2>
                         <div class="flex items-center my-5">
                             <div class="flex items-center mr-4">
-                                <img class="mr-1.5" src="../img/Clock.png"/>
+                                <img class="mr-1.5" src="../../img/Clock.png"/>
                                 <h6 class="caption" style="color: #B2B2B2">3 საათის წინ</h6>
                             </div>
                             <div class="flex items-center ml-4">
-                                <img class="mr-1.5" src="../svg/User.svg"/>
+                                <img class="mr-1.5" src="../../svg/User.svg"/>
                                 <h6 class="caption" style="color: #B2B2B2">ნიკოლოზ მაჭავარიანი</h6>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
                         <h4 class="text-base leading-6 mt-5">
                             ბუნდესგუნდი ბოლო დროს არასტაბილურია, მაგრამ როცა საქმე დიდ ტურნირს და მნიშვნელოვან მატჩს ეხება, დაუშვებელია, გერმანიას აუტსაიდერი ეწოდოს. თანაც, მატჩი მიუნხენში გაიმართება - ბუნდესგუნდი ფაქტობრივი მასპინძელია!
                         </h4>
-                        <img class="w-full mt-3" src="../img/football.png"/>
+                        <img class="w-full mt-3" src="../../img/football.png"/>
                         <h6 class="text-sm leading-4 my-2 text-center"  style="color: #5F5F5F">საქართველოს მოფარიკავეთა ნაკრებმა წინასაოლიმპიადო ტურნირი მე-3 ადგილზე დაასრულა</h6>
                         <h4 class="text-base leading-6 mt-5">
                             ევროპის ჩემპიონატის შემდეგ გერმანიის ნაკრებში იოახიმ ლიოვის ეპოქა დასრულდება. ‘იოგი’ ამბობს, რომ ახლა ამაზე არ ფიქრობს, მაგრამ ეს რთული დასაჯერებელია. ზოგადად, ბუნდესგუნდში უკვე დიდი ხანია, არასახარბიელო სიტუაციაა - 2018 წლის მუნდიალზე განცდილი კრახის შემდეგ რამდენიმე კარგი ფაზა და მატჩი იყო, მაგრამ საერთო ჯამში გერმანიის თამაშს არასტაბილური უფრო ეთქმოდა. ამრიგად, ძალიან საინტერესოა, შეძლებენ თუ არა გერმანელი ფეხბურთელები საფრანგეთთან მაქსიმალურ კონცენტრაციას, რაც ძალიან სჭირდებათ. ეს თამაში გამოაჩენს, რამდენად შორს წასვლა შეუძლია ლიოვის გუნდს. თავის მხრივ, ეს მატჩი უდიდესი გამოცდაა საფრანგეთის ნაკრებისთვისაც, რომელსაც ტურნირზე ყველაზე დაბალანსებული, ფაქტობრივად საუკეთესო შემადგენლობა ჰყავს.
@@ -181,7 +181,7 @@
                                     <div class="flex items-center">
                                     </div>
                                 </div>
-                                <img src="../img/Ellipse 11.png"/>
+                                <img src="../../img/Ellipse 11.png"/>
                             </div>
                             <h4 class="text-base leading-6 mt-5">ეს უდავოდ სიკვდილის ჯგუფია, მაგრამ აქვე უნდა შეგახსენოთ, რომ ჯგუფიდან 3 გუნდი გადის, რაც იმას ნიშნავს, რომ შეიძლება სამივე გრანდი გავიდეს. თუმცა, ფრანგებმაც, გერმანელებმაც და პორტუგალიელებმაც უნდა გაითვალისწინონ, რომ უნგრეთის ნაკრებს ერთ მშვენიერ დღეს ნებისმიერის გამწარება შეუძლია.
 
@@ -204,22 +204,22 @@
                         <h2 class="section-text sm:mt-5">გაზიარება</h2>
                         <div  class="flex gap-4">
                             <a href="#">
-                                <img src="../svg/socialNetwork.svg" />
+                                <img src="../../svg/socialNetwork.svg" />
                             </a>
                             <a href="#">
-                                <img src="../svg/messanger.svg" />
+                                <img src="../../svg/messanger.svg" />
                             </a>
                             <a href="#">
-                                <img src="../svg/share.svg" />
+                                <img src="../../svg/share.svg" />
                             </a>
                         </div>
                     </div>
                     <a href="#" class="bg-white my-5 flex items-center  rounded p-4 col-span-2">
-                        <img class="mr-2" src="../img/news.png"/>
+                        <img class="mr-2" src="../../img/news.png"/>
                         <div class="grid gap-y-2 mx-5 w-full">
                             <div class="flex justify-between">
                                 <h2 class="text-redPall font-semibold text-sm xs:leading-tiny">შემდეგი სიახლე</h2>
-                                <img src="../svg/ArrowDown.svg"/>
+                                <img src="../../svg/ArrowDown.svg"/>
                             </div>
                             <p class="verbatim-desc">გვარდიოლა ცვლილებებს გეგმავს - სიტის სატრანსფერო მიზნები</p>
                         </div>
@@ -238,11 +238,11 @@
                             </div>
                         </div>
                         <div class="flex  border-t border-b border-gray-300 py-7">
-                            <img class="w-16 h-12" src="../img/Rectangle 20 (1).png"/>
+                            <img class="w-16 h-12" src="../../img/Rectangle 20 (1).png"/>
                             <input type="text" name="comment" class="ml-2 w-full bg-transparent border text-sm border-gray-300" placeholder="დაამატეთ კომენტარი"/>
                         </div>
                         <a href="#" class="flex items-center mt-2 mb-5">
-                            <img class="mr-2 w-4" src="../svg//socialNetwork.svg"/>
+                            <img class="mr-2 w-4" src="../../svg//socialNetwork.svg"/>
                             <h2 class="text-tiny" style="color: #1877f2">ფეისბუქის კომენტარების პლაგინი</h2>
                         </a>
                     </div>
@@ -253,11 +253,11 @@
                     <a href="#">
                         <h2 class="text-white text-2xl font-bold leading-relaxed mb-5">HOT სიახლე</h2>
                         <div class="flex items-center justify-center">
-                            <img src="../img/hotNews.png"/>
+                            <img src="../../img/hotNews.png"/>
                             <div class="ml-2">
                                 <h2 class="text-13 text-white leading-5">სკანდალი ჩოგბურთში - რუსი იანა სიზიკოვა საფრანგეთში დააკავეს</h2>
                                 <div class="flex items-center ">
-                                    <img class="mr-1.5 text-white" src="../img/Clock (1).png"/>
+                                    <img class="mr-1.5 text-white" src="../../img/Clock (1).png"/>
                                     <h4 class="text-white text-tiny">3 საათის წინ</h4>
                                 </div>
                             </div>
@@ -269,70 +269,70 @@
                     <h2 class=" text-2xl font-bold leading-relaxed mb-5">მსგავსი სიახლეები</h2>
                     <a class="flex items-center cursor-pointer relative">
                             <img class="max-w-sm rounded-4 " 
-                            src="../img/post.png"
+                            src="../../img/post.png"
                         />
-                        <img class="absolute bottom-3/4" src="../img/Group 271.png"/>
+                        <img class="absolute bottom-3/4" src="../../img/Group 271.png"/>
                         <div class="grid items-center justify-center ml-6 gap-2">
                         <h2 class="text-black font-semibold text-13 ">სკანდალი ჩოგბურთში - რუსი იანა სიზიკოვა საფრანგეთში დააკავეს❗❗</h2>
                         <div class="flex items-center">
-                            <img class="mr-1.5 " src="../img/Clock.png"/>
+                            <img class="mr-1.5 " src="../../img/Clock.png"/>
                             <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
                         </div>
                         </div>
                     </a>
                     <a class="flex items-center cursor-pointer relative my-5">
                         <img class="max-w-sm rounded-4 " 
-                        src="../img/Rectangle 9 (23).png"/>
+                        src="../../img/Rectangle 9 (23).png"/>
                         <div class="grid items-center justify-center ml-6 gap-2">
                         <h2 class="text-black font-semibold text-13 ">კოუტინიო ვალის სანაცვლოდ - ბარსელონას უცნაური სქემა</h2>
                         <div class="flex items-center">
-                            <img class="mr-1.5 " src="../img/Clock.png"/>
+                            <img class="mr-1.5 " src="../../img/Clock.png"/>
                             <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
                         </div>
                         </div>
                     </a>
                     <a class="flex items-center cursor-pointer relative  my-5">
                         <img class="max-w-sm rounded-4 " 
-                        src="../img/Rectangle 9 (24).png"/>
-                        <img class="absolute bottom-3/4" src="../img/Group 271.png"/>
+                        src="../../img/Rectangle 9 (24).png"/>
+                        <img class="absolute bottom-3/4" src="../../img/Group 271.png"/>
                         <div class="grid items-center justify-center ml-6 gap-2">
                         <h2 class="text-black font-semibold text-13 ">კულმინაცია ნოკაუტით - პროფესიონალური კრივის დღე თბილისში</h2>
                         <div class="flex items-center">
-                            <img class="mr-1.5 " src="../img/Clock.png"/>
+                            <img class="mr-1.5 " src="../../img/Clock.png"/>
                             <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
                         </div>
                         </div>
                     </a>
                      <a class="flex items-center cursor-pointer relative  my-5">
                         <img class="max-w-sm rounded-4 " 
-                        src="../img/Rectangle 9 (25).png"/>
+                        src="../../img/Rectangle 9 (25).png"/>
                       
                         <div class="grid items-center justify-center ml-6 gap-2">
                         <h2 class="text-black font-semibold text-13 ">გვარდიოლა ცვლილებებს გეგმავს - სიტის სატრანსფერო მიზნები</h2>
                         <div class="flex items-center">
-                            <img class="mr-1.5 " src="../img/Clock.png"/>
+                            <img class="mr-1.5 " src="../../img/Clock.png"/>
                             <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
                         </div>
                         </div>
                     </a>
                     <a class="flex items-center cursor-pointer relative  my-5">
                         <img class="max-w-sm rounded-4 " 
-                        src="../img/Rectangle 9 (26).png"/>
+                        src="../../img/Rectangle 9 (26).png"/>
                         <div class="grid items-center justify-center ml-6 gap-2">
                         <h2 class="text-black font-semibold text-13 ">'ალბათ, არ ვიმსახურებდით' - ლევან კობიაშვილი ნაკრების გამოუყენებელ შანსზე</h2>
                         <div class="flex items-center">
-                            <img class="mr-1.5 " src="../img/Clock.png"/>
+                            <img class="mr-1.5 " src="../../img/Clock.png"/>
                             <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
                         </div>
                         </div>
                     </a>
                     <a class="flex items-center cursor-pointer relative">
                         <img class="max-w-sm rounded-4 " 
-                        src="../img/Rectangle 9 (27).png"/>
+                        src="../../img/Rectangle 9 (27).png"/>
                         <div class="grid items-center justify-center ml-6 gap-2">
                         <h2 class="text-black font-semibold text-13 ">'ალბათ, არ ვიმსახურებდით' - ლევან კობიაშვილი ნაკრების გამოუყენებელ შანსზე</h2>
                         <div class="flex items-center">
-                            <img class="mr-1.5 " src="../img/Clock.png"/>
+                            <img class="mr-1.5 " src="../../img/Clock.png"/>
                             <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
                         </div>
                         </div>
@@ -352,83 +352,83 @@
                         <h2 class="nav-title">ლიონელ მესი</h2>
                         <p class="verbatim-desc  sm:w-auto">მიუნხენში ლოგიკური და გასაგები კონცეფცია აქვთ, ამიტომაცაა ბაიერნი დიდი გუნდი</p>
                         <div class="flex items-center">
-                        <img class="mr-1.5" src="../img/Clock.png"/>
+                        <img class="mr-1.5" src="../../img/Clock.png"/>
                         <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
                         </div>
                     </div>
-                    <img src="../img/Ellipse 11.png"/>
+                    <img src="../../img/Ellipse 11.png"/>
                     </div>
                     <div class="bg-white  sm:w-auto flex items-center justify-between rounded p-4 mb-5">
                     <div class="grid gap-y-4">
                         <h2 class="nav-title">კილიან მბაპე</h2>
                         <p class="verbatim-desc  sm:w-auto">ლუკას ერნანდესმა მითხრა, რომ სწორედ ბაიერნში უნდა გადავიდე</p>
                         <div class="flex items-center">
-                        <img class="mr-1.5" src="../img/Clock.png"/>
+                        <img class="mr-1.5" src="../../img/Clock.png"/>
                         <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
                         </div>
                     </div>
-                    <img src="../img/Ellipse 11 (1).png"/>
+                    <img src="../../img/Ellipse 11 (1).png"/>
                     </div>
                     <div class="bg-white  sm:w-auto flex items-center justify-between rounded p-4 mb-5">
                     <div class="grid gap-y-4">
                         <h2 class="nav-title">ტომას მიულერი</h2>
                         <p class="verbatim-desc  sm:w-auto">ქართველებმა ფეხბურთის თამაში კარგად იციან, ეს ნიჭი ღმერთისგან აქვთ</p>
                         <div class="flex items-center">
-                        <img class="mr-1.5" src="../img/Clock.png"/>
+                        <img class="mr-1.5" src="../../img/Clock.png"/>
                         <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
                         </div>
                     </div>
-                    <img src="../img/Ellipse 11 (2).png"/>
+                    <img src="../../img/Ellipse 11 (2).png"/>
                     </div>
                 </div>
                 <div class="bg-white rounded-md p-5 mt-5 sm:hidden">
                     <h2 class=" text-2xl font-bold leading-relaxed mb-5">ვიდეო</h2>
                     <div class="grid gap-8 grid-cols-2">
                         <a class="m-auto h-36 cursor-pointer relative w-40">
-                            <img src="../img/video/Rectangle(10).png" />
-                            <img class="absolute top-7 right-40" src="../svg/PlayRed.svg"/>
+                            <img src="../../img/video/Rectangle(10).png" />
+                            <img class="absolute top-7 right-40" src="../../svg/PlayRed.svg"/>
                             <span class="absolute left-1.5 top-16 text-white text-tiny bg-dark rounded text-center h-4 w-8">00:24</span>
                             <h2 class="text-tiny leading-4 text-black font-semibold mt-2.5">ტალახაძის მორიგი სიგიჟე - 300 კგ. ვარჯიშზე</h2>
                         </a>
                         <a class="m-auto h-36 cursor-pointer relative w-40">
-                            <img src="../img/video/Rectangle(10).png" />
-                            <img class="absolute top-7 right-40" src="../svg/PlayRed.svg"/>
+                            <img src="../../img/video/Rectangle(10).png" />
+                            <img class="absolute top-7 right-40" src="../../svg/PlayRed.svg"/>
                             <span class="absolute left-1.5 top-16 text-white text-tiny bg-dark rounded text-center h-4 w-8">00:24</span>
                             <h2 class="text-tiny leading-4 text-black font-semibold mt-2.5">ტალახაძის მორიგი სიგიჟე - 300 კგ. ვარჯიშზე</h2>
                         </a>
                         <a class="m-auto h-36 cursor-pointer relative w-40">
-                            <img src="../img/video/Rectangle(10).png" />
-                            <img class="absolute top-7 right-40" src="../svg/PlayRed.svg"/>
+                            <img src="../../img/video/Rectangle(10).png" />
+                            <img class="absolute top-7 right-40" src="../../svg/PlayRed.svg"/>
                             <span class="absolute left-1.5 top-16 text-white text-tiny bg-dark rounded text-center h-4 w-8">00:24</span>
                             <h2 class="text-tiny leading-4 text-black font-semibold mt-2.5">ტალახაძის მორიგი სიგიჟე - 300 კგ. ვარჯიშზე</h2>
                         </a>
                         <a class="m-auto h-36 cursor-pointer relative w-40">
-                            <img src="../img/video/Rectangle(10).png" />
-                            <img class="absolute top-7 right-40" src="../svg/PlayRed.svg"/>
+                            <img src="../../img/video/Rectangle(10).png" />
+                            <img class="absolute top-7 right-40" src="../../svg/PlayRed.svg"/>
                             <span class="absolute left-1.5 top-16 text-white text-tiny bg-dark rounded text-center h-4 w-8">00:24</span>
                             <h2 class="text-tiny leading-4 text-black font-semibold mt-2.5">ტალახაძის მორიგი სიგიჟე - 300 კგ. ვარჯიშზე</h2>
                         </a>
                         <a class="m-auto h-36 cursor-pointer relative w-40">
-                            <img src="../img/video/Rectangle(10).png" />
-                            <img class="absolute top-7 right-40" src="../svg/PlayRed.svg"/>
+                            <img src="../../img/video/Rectangle(10).png" />
+                            <img class="absolute top-7 right-40" src="../../svg/PlayRed.svg"/>
                             <span class="absolute left-1.5 top-16 text-white text-tiny bg-dark rounded text-center h-4 w-8">00:24</span>
                             <h2 class="text-tiny leading-4 text-black font-semibold mt-2.5">ტალახაძის მორიგი სიგიჟე - 300 კგ. ვარჯიშზე</h2>
                         </a>
                         <a class="m-auto h-36 cursor-pointer relative w-40">
-                            <img src="../img/video/Rectangle(10).png" />
-                            <img class="absolute top-7 right-40" src="../svg/PlayRed.svg"/>
+                            <img src="../../img/video/Rectangle(10).png" />
+                            <img class="absolute top-7 right-40" src="../../svg/PlayRed.svg"/>
                             <span class="absolute left-1.5 top-16 text-white text-tiny bg-dark rounded text-center h-4 w-8">00:24</span>
                             <h2 class="text-tiny leading-4 text-black font-semibold mt-2.5">ტალახაძის მორიგი სიგიჟე - 300 კგ. ვარჯიშზე</h2>
                         </a>
                         <a class="m-auto h-36 cursor-pointer relative w-40">
-                            <img src="../img/video/Rectangle(10).png" />
-                            <img class="absolute top-7 right-40" src="../svg/PlayRed.svg"/>
+                            <img src="../../img/video/Rectangle(10).png" />
+                            <img class="absolute top-7 right-40" src="../../svg/PlayRed.svg"/>
                             <span class="absolute left-1.5 top-16 text-white text-tiny bg-dark rounded text-center h-4 w-8">00:24</span>
                             <h2 class="text-tiny leading-4 text-black font-semibold mt-2.5">ტალახაძის მორიგი სიგიჟე - 300 კგ. ვარჯიშზე</h2>
                         </a>
                         <a class="m-auto h-36 cursor-pointer relative w-40">
-                            <img src="../img/video/Rectangle(10).png" />
-                            <img class="absolute top-7 right-40" src="../svg/PlayRed.svg"/>
+                            <img src="../../img/video/Rectangle(10).png" />
+                            <img class="absolute top-7 right-40" src="../../svg/PlayRed.svg"/>
                             <span class="absolute left-1.5 top-16 text-white text-tiny bg-dark rounded text-center h-4 w-8">00:24</span>
                             <h2 class="text-tiny leading-4 text-black font-semibold mt-2.5">ტალახაძის მორიგი სიგიჟე - 300 კგ. ვარჯიშზე</h2>
                         </a>
@@ -453,7 +453,7 @@
             <div class="flex items-center">
               <div class="flex items-start w-full xxs:grid xxs:justify-center">
                 <div>
-                  <img class="xxs:m-auto xxs:py-5" src="../svg/logo.svg"/>
+                  <img class="xxs:m-auto xxs:py-5" src="../../svg/logo.svg"/>
                 </div>
                 <div class="flex justify-around items-center ml-auto xxs:grid xxs:justify-center">
                   <div class="flex justify-around items-center ml-auto">
@@ -482,13 +482,13 @@
                   </div>
                   <div class="flex space-x-4 xxs:justify-center xxs:py-5">
                     <a>
-                      <img src="../img/Social Network Icons.png"/>
+                      <img src="../../img/Social Network Icons.png"/>
                     </a>
                     <a>
-                      <img src="../img/Instagram.png"/>
+                      <img src="../../img/Instagram.png"/>
                     </a>
                     <a>
-                      <img src="../img/Youtube.png"/>
+                      <img src="../../img/Youtube.png"/>
                     </a>
                   </div>
                 </div>

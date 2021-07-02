@@ -46,3 +46,9 @@ html {
 .desc {
   color: #808080;
 }
+
+.header {
+  background-image: url("../public/img/head.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
