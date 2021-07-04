@@ -16,19 +16,15 @@
   @apply font-normal text-sm;
 }
 .active-title {
-  @apply text-redPall font-normal text-sm font-bold;
+  @apply text-redPall text-sm font-bold;
 }
 
 .input {
   @apply h-10 rounded py-0.5 px-2.5 flex justify-between;
 }
 
-.input-sm {
-  @apply h-10  rounded py-0.5 px-2.5 flex justify-between;
-}
-
 .desc {
-  @apply font-normal leading-5 text-sm;
+  @apply font-normal leading-5 text-sm xxs:hidden;
 }
 
 .verbatim-desc {

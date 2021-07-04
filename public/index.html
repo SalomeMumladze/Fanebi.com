@@ -1,423 +1,418 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-2" />
     <meta name="viewport" content="width=device-width, initial-sclae=1.0" />
+    <!-- font family -->
+    <link href="https://free.bboxtype.com/embedfonts/?family=FiraGO:400" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="carousel.css" />
     <title>Fanebi.com</title>
   </head>
   <body>
     <div class="bg-white">
-        <div class="mx-auto lg:container max-w-full bg-white">
-            <div class="flex flex-wrap flex-row justify-between relative">
-                <div class="bg-black w-full flex items-center">
-                    <div class="h-28 w-full bg-white flex items-center m-auto">
-                    <a href="#"><img src="svg/logo.svg" /></a>
-                    <div class="ml-auto flex justify-between items-center xs:hidden">
-                        <ul class="flex">
-                            <li class="nav-title mx-2.5 sm:ml-0">
-                                <a href="#">ფეხბურთი</a>
-                            </li>
-                            <li class="nav-title mx-2.5 sm:ml-0">
-                                <a href="#">კალათბურთი</a>
-                            </li>
-                            <li class="nav-title mx-2.5 sm:ml-0">
-                                <a href="#">რაგბი</a>
-                            </li>
-                            <li class="nav-title mx-2.5 sm:ml-0">
-                                <a href="#">სხვადასხვა</a>
-                            </li>
-                            <li class="nav-title mx-2.5 sm:ml-0">
-                                <a href="#">ვიდეო</a>
-                            </li>
-                            <li class="nav-title mx-2.5 sm:ml-0">
-                                <a href="#">ტრანსფერები</a>
-                            </li>
-                        </ul>
-                        <div class="input">
-                            <img class="p-1.5" src="svg/search.svg" />
-                            <input class="bg-transparent text-sm  border border-transparent focus:outline-none" placeholder="ძიება"></input>
-                        </div> 
-                        <a href="#facebook" class="py-5 px-2.5">
-                            <img src="svg/fc.svg" />
-                        </a>
-                    </div>
-                        <div class="hidden xs:block ml-auto"  x-data="{ mobileMenuOpen : false }" >
-                        <div class="flex items-center justify-center">
-                        <div class="input-sm">
-                            <img class="p-1.5" src="svg/search.svg" />
-                            <input class="bg-transparent text-sm w-52 xxs:w-0 md:w-44 border border-transparent focus:outline-none" placeholder="ძიება"></input>
-                        </div> 
-                        <a class="mx-8 xs:mx-4" href="#facebook">
-                            <img class="w-30 h-30" src="svg/fc-mobile.svg" />
-                        </a>
-                            <button @click="mobileMenuOpen = !mobileMenuOpen" class="border border-transparent focus:outline-none inline-block md:hidden w-8 h-8">
-                            <img class="w-30 h-30 " src="svg/menu.svg"/> 
+      <div class="mx-auto lg:container max-w-full bg-white">
+        <div class="flex flex-wrap flex-row justify-between relative">
+          <div class="bg-black w-full flex items-center">
+            <div class="h-28 w-full bg-white flex items-center m-auto">
+              <a href="#"><img src="svg/logo.svg" /></a>
+              <div class="ml-auto flex justify-between items-center xs:hidden">
+                <ul class="flex">
+                  <li class="nav-title mx-2.5 sm:ml-0">
+                    <a href="#">ფეხბურთი</a>
+                  </li>
+                  <li class="nav-title mx-2.5 sm:ml-0">
+                    <a href="#">კალათბურთი</a>
+                  </li>
+                  <li class="nav-title mx-2.5 sm:ml-0">
+                    <a href="#">რაგბი</a>
+                  </li>
+                  <li class="nav-title mx-2.5 sm:ml-0">
+                    <a href="#">სხვადასხვა</a>
+                  </li>
+                  <li class="nav-title mx-2.5 sm:ml-0">
+                    <a href="#">ვიდეო</a>
+                  </li>
+                  <li class="nav-title mx-2.5 sm:ml-0">
+                    <a href="#">ტრანსფერები</a>
+                  </li>
+                </ul>
+                <div class="input">
+                  <img class="p-1.5" src="svg/search.svg" />
+                  <input class="bg-transparent text-sm  border border-transparent focus:outline-none" placeholder="ძიება"></input>
+                </div>
+                <a href="#facebook" class="py-5 px-2.5">
+                <img src="svg/fc.svg" />
+                </a>
+              </div>
+              <div class="hidden xs:block ml-auto"  x-data="{ mobileMenuOpen : false }" >
+                <div class="flex items-center justify-center">
+                  <div class="input">
+                    <img class="p-1.5" src="svg/search.svg" />
+                    <input class="bg-transparent text-sm w-52 xxs:w-0 md:w-44 border border-transparent focus:outline-none" placeholder="ძიება"></input>
+                  </div>
+                  <a class="mx-8 xs:mx-4" href="#facebook">
+                  <img class="w-30 h-30" src="svg/fc-mobile.svg" />
+                  </a>
+                  <button @click="mobileMenuOpen = !mobileMenuOpen" class="border border-transparent focus:outline-none inline-block md:hidden w-8 h-8">
+                  <img class="w-30 h-30 " src="svg/menu.svg"/> 
+                  </button>
+                  <nav class="absolute md:relative top-24 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white rounded-lg md:rounded-none md:bg-transparent pt-0 md:p-0"
+                    :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}"  @click.away="mobileMenuOpen = false"
+                    >
+                    <div class="flex">
+                      <div class="h-auto w-36" style="background: rgba(46, 46, 46)"></div>
+                      <div  class="mx-5 w-full">
+                        <ul class="w-full pb-5">
+                          <li>
+                            <button class="focus:outline-none flex items-center w-full">
+                              <h2 class="nav-title-mob" href="#">ფეხბურთი</h2>
+                              <img class="ml-auto" src="img/arrow.png">
                             </button>
-                            <nav class="absolute md:relative top-24 left-0 md:top-0 z-20 md:flex flex-col md:flex-row md:space-x-6 font-semibold w-full md:w-auto bg-white rounded-lg md:rounded-none md:bg-transparent pt-0 md:p-0"
-                            :class="{ 'flex' : mobileMenuOpen , 'hidden' : !mobileMenuOpen}"  @click.away="mobileMenuOpen = false"
-                            >
-                            <div class="flex">
-                            <div class="h-auto w-36" style="background: rgba(46, 46, 46)"></div>
-                            <div  class="mx-5 w-full">
-                            <ul class="w-full pb-5">
-                                <li>
-                                    <button class="focus:outline-none flex items-center w-full">
-                                    <h2 class="nav-title-mob" href="#">ფეხბურთი</h2>
-                                    <img class="ml-auto" src="img/arrow.png">
-                                    </button>
-                                </li>
-                                <li>
+                          </li>
+                          <li>
+                            <button class="focus:outline-none flex items-center w-full">
+                              <h2 class="nav-title-mob" href="#">კალათბურთი</h2>
+                              <img class="ml-auto" src="img/arrow.png">
+                            </button>
+                          </li>
+                          <li>
+                            <button class="focus:outline-none flex items-center w-full" onclick="showWishlist()" >
+                              <h2 class="nav-title-mob" id="nav_title" href="#">რაგბი</h2>
+                              <img class="ml-auto" id="arrow" src="img/arrow.png">
+                            </button>
+                            <ul class="ml-8" style="display: none;" id="list_box">
+                              <li>
                                 <button class="focus:outline-none flex items-center w-full">
-                                    <h2 class="nav-title-mob" href="#">კალათბურთი</h2>
-                                    <img class="ml-auto" src="img/arrow.png">
-                                    </button>
-                                </li>
-                                <li>
-                                    <button class="focus:outline-none flex items-center w-full" onclick="showWishlist()" >
-                                    <h2 class="nav-title-mob" id="nav_title" href="#">რაგბი</h2>
-                                    <img class="ml-auto" id="arrow" src="img/arrow.png">
-                                    </button>
-                                    <ul class="ml-8" style="display: none;" id="list_box">
-                                    <li>
-                                        <button class="focus:outline-none flex items-center w-full">
-                                        <img src="img/geFlag.png"/>
-                                        <a class="nav-title-mob">საქართველო</a>
-                                        <img class="ml-auto" src="img/arrow.png">
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="focus:outline-none flex items-center w-full">
-                                        <img src="img/europeanFlag.png"/>
-                                        <a class="nav-title-mob">საერთაშორისო</a>
-                                        </button>
-                                    </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                <button class="focus:outline-none flex items-center w-full">
-                                    <h2 class="nav-title-mob" href="#">სხვადასხვა</h2>
-                                    <img class="ml-auto" src="img/arrow.png">
+                                <img src="img/geFlag.png"/>
+                                <a class="nav-title-mob">საქართველო</a>
+                                <img class="ml-auto" src="img/arrow.png">
                                 </button>
-                                </li>
-                                <li>
+                              </li>
+                              <li>
                                 <button class="focus:outline-none flex items-center w-full">
-                                    <h2 class="nav-title-mob" href="#">ვიდეო</h2>
-                                    <img class="ml-auto" src="img/arrow.png">
+                                <img src="img/europeanFlag.png"/>
+                                <a class="nav-title-mob">საერთაშორისო</a>
                                 </button>
-                                </li>
-                                <li>
-                                <button class="focus:outline-none flex items-center w-full">
-                                    <h2 class="nav-title-mob" href="#">ტრანსფერები</h2>
-                                    <img class="ml-auto" src="img/arrow.png">
-                                </button>
-                                </li>
+                              </li>
                             </ul>
-                            <div class="flex space-x-4 mx-2.5 bottom-3.5 mt-8 mb-3.5">
-                                <a>
-                                <img src="img/Social Network Icons.png"/>
-                                </a>
-                                <a>
-                                <img src="img/Instagram.png"/>
-                                </a>
-                                <a>
-                                <img src="img/Youtube.png"/>
-                                </a>
-                            </div>
-                            </div>
-                            </div>
-                            </nav>
+                          </li>
+                          <li>
+                            <button class="focus:outline-none flex items-center w-full">
+                              <h2 class="nav-title-mob" href="#">სხვადასხვა</h2>
+                              <img class="ml-auto" src="img/arrow.png">
+                            </button>
+                          </li>
+                          <li>
+                            <button class="focus:outline-none flex items-center w-full">
+                              <h2 class="nav-title-mob" href="#">ვიდეო</h2>
+                              <img class="ml-auto" src="img/arrow.png">
+                            </button>
+                          </li>
+                          <li>
+                            <button class="focus:outline-none flex items-center w-full">
+                              <h2 class="nav-title-mob" href="#">ტრანსფერები</h2>
+                              <img class="ml-auto" src="img/arrow.png">
+                            </button>
+                          </li>
+                        </ul>
+                        <div class="flex space-x-4 mx-2.5 bottom-3.5 mt-8 mb-3.5">
+                          <a>
+                          <img src="img/Social Network Icons.png"/>
+                          </a>
+                          <a>
+                          <img src="img/Instagram.png"/>
+                          </a>
+                          <a>
+                          <img src="img/Youtube.png"/>
+                          </a>
                         </div>
+                      </div>
                     </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="lg:container max-w-full px-4 mx-auto mt-5">
-        <div class="mt-2.5 grid-cols-2 grid gap-4 xs:grid-cols-1">
-            <div >
-                <div class="bg-white rounded">
-                    <div class="carousel relative">
-                    <div class="carousel-inner relative overflow-hidden">
-                      
-                        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
-                        <div class="carousel-item absolute opacity-0">
-                        <div class="block ">
-                            <img class="xs:w-full w-full" src="img/Rectangle 7.png"/> 
-                            <div class="rounded h-1 w-24 bg-redPall m-auto relative bottom-px"></div>
-                        </div>
-                        </div>
-                        <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 left-0  mt-44 xxs:mt-28">‹</label>
-                        <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 right-0  mt-44 xxs:mt-28">›</label>
-                        
-                      
-                        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
-                        <div class="carousel-item absolute opacity-0" >
-                        <div class="block">
-                            <img class="xs:w-full w-full" src="img/Rectangle 7.png"/>
-                            <div class="rounded h-1 w-24 bg-redPall m-auto relative bottom-px"></div>
-                        </div>
-                        </div>
-                        <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 left-0  mt-44 xxs:mt-28">‹</label>
-                        <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 right-0  mt-44 xxs:mt-28">›</label> 
-                        
-                     
-                        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
-                        <div class="carousel-item absolute opacity-0">
-                        <div class="block">
-                            <img class="xs:w-full w-full" src="img/Rectangle 7.png"/> 
-                            <div class="rounded h-1 w-24 bg-redPall m-auto relative bottom-px"></div>
-                        </div>
-                        </div>
-                        <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 left-0  mt-44 xxs:mt-28">‹</label>
-                        <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 right-0  mt-44 xxs:mt-28">›</label>
-                        <h3 class="h-20 flex items-center justify-center text-xl m-auto text-center w-510 font-semibold sm:w-auto sm:text-base">
-                        ქართველი მსაჯები 21-წლამდე ევროპის ჩემპიონატის ფინალს იმსაჯებენ
-                        </h3>
-                        <ol class="carousel-indicators relative flex justify-center items-center">
-                        <li class="inline-block mr-3">
-                            <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-gray-200 hover:text-redPall-700">•</label>
-                        </li>
-                        <li class="inline-block mr-3">
-                            <label for="carousel-2" class="carousel-bullet focus:text-redPall carousel-bullet cursor-pointer block text-4xl text-gray-200 ">•</label>
-                        </li>
-                        <li class="inline-block mr-3">
-                            <label for="carousel-3" class="carousel-bullet focus:text-redPall carousel-bullet cursor-pointer block text-4xl text-gray-200">•</label>
-                        </li>
-                        </ol>
-                        
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid grid-cols-2 gap-4 xs:hidden">
-                <div class="grid grid-rows-2 gap-4">
-                    <a href="#" class=" bg-white rounded">
-                        <img class="h-38 w-full" src="img/Rectangle 20.png"/>
-                        <h2 class="nav-title m-auto h-24 flex items-center p-5">ჯიჯოს შეეძლო ახალი მალდინი გამხდარიყო - იბრა გულდაწყვეტილია</h2>
-                    </a>
-                    <a href="#" class=" bg-white rounded">
-                        <img class="h-38 w-full" src="img/Rectangle 20 (1).png"/>
-                        <h2 class="nav-title m-auto h-24 flex items-center p-5">ოფიციალურად: ჟორჟინიო ვეინალდუმი პარი სენ-ჟერმენის ფეხბურთელია</h2>
-                    </a>
-                </div>
-                <div class="grid grid-rows-2  gap-4">
-                    <a href="#" class=" bg-white rounded">
-                        <img class="h-38 w-full" src="img/Rectangle 20 (2).png"/>
-                        <h2 class="nav-title m-auto h-24 flex items-center p-5">მბაპე პარიზიდან ვერ წავა? ნეიმარი კილიანის ტრანსფერს ბლოკავს</h2>
-                    </a>
-                    <a href="#" class=" bg-white rounded">
-                        <img class="h-38 w-full" src="img/Rectangle 20 (3).png"/>
-                        <h2 class="nav-title m-auto h-24 flex items-center p-5">ზედიზედ 2 მოგება პორტუგალიაში - ბოლქვაძე მეოთხედფინალშია</h2>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="mt-12">
-            <h1 class="section-text">ტოპ 10 სიახლე</h1>
-            <div class="flex border-b border-gray-300 pb-4 after:bg-red after:w-28 ">
-            <button class="mr-8 focus:outline-none ">
-                <h1 class="active-title">დღის სიახლეები</h1>
-            </button>
-            <button class="mr-8 focus:outline-none ">
-                <h1 class="section-title">კვირის სიახლეები</h1>
-            </button>
-            </div>
-            <div class="relative rounded-t w-32 bg-redPall h-1 bottom-1"></div>
-            <div class="my-8 grid grid-cols-5 xs:grid-cols-2 gap-8">
-                <a href="#">
-                <img class="h-38 w-full  rounded" src="img/Rectangle9.png"/>
-                <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">ჯიჯოს შეეძლო ახალი მალდინი გამხდარიყო - იბრა გულდაწყვეტილია</h2>
-                </a>
-                <a href="#">
-                <img class="h-38 w-full  rounded" src="img/Rectangle1.png"/>
-                <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">კვარაცხელია რუსეთის პრემიერლიგის საუკეთესო ახალგაზრდა ფეხბურთელად დაასახელეს</h2>
-                </a>
-                <a href="#">
-                <img class="h-38 w-full  rounded" src="img/Rectangle 9 (2).png"/>
-                <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">რეალის ფეხბურთელებისთვის შვებულება ადრე დასრულდება - ანჩელოტის ასე სურს</h2>
-                </a>
-                <a href="#">
-                <img class="h-38 w-full  rounded" src="img/Rectangle 9 (3).png"/>
-                <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">ფუტსალი | საქართველოს ნაკრების მეორე ტესტი და ფრე ლიეტუვასთან</h2>
-                </a>
-                <a href="#">
-                <img class="h-38 w-full  rounded" src="img/Rectangle 9 (4).png"/>
-                <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">ზაზა ნადირაძე ევროპის ჩემპიონატზე ოქროს მედლისთვის იბრძოლებს</h2>
-                </a>
-                <a href="#">
-                <img class="h-38 w-full  rounded" src="img/Rectangle 9 (5).png"/>
-                <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">უეფა: VAR სისტემით მიღებული გადაწყვეტილებების 94,5 პროცენტი ზუსტია</h2>
-                </a>
-                <a href="#">
-                <img class="h-38 w-full  rounded" src="img/Rectangle 9 (6).png"/>
-                <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">ჯიჯოს შეეძლო ახალი მალდინი გამხდარიყო - იბრა გულდაწყვეტილია</h2>
-                </a>
-                <a href="#">
-                <img class="h-38 w-full  rounded" src="img/Rectangle 9 (7).png"/>
-                <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">რუდიგერმა ჩემპიონთა ლიგის მოგების შემდეგ შვილს სახელად “თასი” დაარქვა (ფოტო)</h2>
-                </a>
-                <a href="#">
-                <img class="h-38 w-full  rounded" src="img/Rectangle 9 (8).png"/>
-                <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">ჯიჯოს შეეძლო ახალი მალდინი გამხდარიყო - იბრა გულდაწყვეტილია</h2>
-                </a>
-                <a href="#">
-                <img class="h-38 w-full  rounded" src="img/Rectangle 9 (9).png"/>
-                <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">“ატლეტიკო” საულს 80 მილიონად ყიდის, შემცვლელი უკვე ნაპოვნია</h2>
-                </a>
-            </div>
-            <div class="hidden sm:block xs:block xxs:block sm:w-auto h-auto mb-12 sm:px-2.5 w-full">
-                <h2 class="section-text">ვიდეო</h2>
-                <div class="grid gap-8 grid-cols-2" id="mobVideos"></div>
-            </div>
-            <div class="flex justify-between sm:block xxs:block overflow-hidden">
-                <div class="mb-16 sm:px-2.5">
-                    <h1 class="section-text">ბოლო სიახლეები</h1>
-                    <div >
-                    <div class="flex border-b border-gray-300 pb-4 after:bg-red after:w-28 ">
-                        <button class="mr-8 md:mr-4 focus:outline-none ">
-                        <h1 class="active-title">ყველა</h1>
-                        </button>
-                        <button class="mr-8 md:mr-4 focus:outline-none ">
-                        <h1 class="section-title">ფეხბურთი</h1>
-                        </button>
-                        <button class="mr-8 md:mr-4 focus:outline-none ">
-                        <h1 class="section-title">კალათბურთი</h1>
-                        </button>
-                        <button class="mr-8 md:mr-4 focus:outline-none ">
-                        <h1 class="section-title">რაგბი</h1>
-                        </button>
-                        <button class="mr-8 md:mr-4 focus:outline-none ">
-                        <h1 class="section-title">სხვადასხვა</h1>
-                        </button>
-                        <button class="mr-8 md:mr-4 focus:outline-none ">
-                        <h1 class="section-title">ტრანსფერები</h1>
-                        </button>
-                    </div>
-                    <div class="relative rounded-t w-32 bg-redPall h-1 bottom-1"></div>
-                    </div>
-                
-                    <div>
-                        <div class="grid">
-                            <span id="all"></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="sm:mx-2.5 ">
-                    <div class="bg-white ml-auto w-26 sm:w-auto py-7 sm:px-2.5 sm:hidden xs:hidden">
-                    <h2 class="section-text mt-4 ml-7">ვიდეო</h2>
-                    <div class="grid">
-                    <div class="grid gap-4 grid-cols-2" id="videos"></div>
-                        <button class="bg-redPall rounded w-80 h-14 m-auto focus:outline-none my-11">
-                        <h2 class="text-white text-base flex items-center justify-center font-bold leading-4">ყველა ვიდეო</h2>
-                        </button>
-                    </div>
-                    </div>
-                    <div class="mt-24"> 
-                    <h2 class="section-text mt-7">ვერბატიმი</h2>
-                    <div class="bg-white w-26 sm:w-auto flex items-center justify-between rounded p-4 mb-5">
-                    <div class="grid gap-y-4">
-                        <h2 class="nav-title">ლიონელ მესი</h2>
-                        <p class="verbatim-desc w-72 sm:w-auto">მიუნხენში ლოგიკური და გასაგები კონცეფცია აქვთ, ამიტომაცაა ბაიერნი დიდი გუნდი</p>
-                        <div class="flex items-center">
-                        <img class="mr-1.5" src="img/Clock.png"/>
-                        <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
-                        </div>
-                    </div>
-                    <img src="img/Ellipse 11.png"/>
-                    </div>
-                    <div class="bg-white w-26 sm:w-auto flex items-center justify-between rounded p-4 mb-5">
-                    <div class="grid gap-y-4">
-                        <h2 class="nav-title">კილიან მბაპე</h2>
-                        <p class="verbatim-desc w-72 sm:w-auto">ლუკას ერნანდესმა მითხრა, რომ სწორედ ბაიერნში უნდა გადავიდე</p>
-                        <div class="flex items-center">
-                        <img class="mr-1.5" src="img/Clock.png"/>
-                        <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
-                        </div>
-                    </div>
-                    <img src="img/Ellipse 11 (1).png"/>
-                    </div>
-                    <div class="bg-white w-26 sm:w-auto flex items-center justify-between rounded p-4 mb-5">
-                    <div class="grid gap-y-4">
-                        <h2 class="nav-title">ტომას მიულერი</h2>
-                        <p class="verbatim-desc w-72 sm:w-auto">ქართველებმა ფეხბურთის თამაში კარგად იციან, ეს ნიჭი ღმერთისგან აქვთ</p>
-                        <div class="flex items-center">
-                        <img class="mr-1.5" src="img/Clock.png"/>
-                        <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
-                        </div>
-                    </div>
-                    <img src="img/Ellipse 11 (2).png"/>
-                    </div>
-                    </div>
-                    <div class="bg-white my-24">
-                    <img class="w-full" src="img/Rectangle 7 (1).png"/>
-                    <h2 class="font-semibold text-black leading-6 text-base h-20 flex items-center justify-center">23 ივნისის დღის ფოტო</h2>
-                    </div> 
-                </div>
-            </div>
-        </div>
-    </div>
-    <div>
-        <div class="w-full h-3" style="background: #E6EAF0"></div>
-        <div  class="lg:container mx-auto h-56 grid items-center px-4  sm:px-2.5">
-          <div>
-            <div class="flex items-center">
-              <div class="flex items-start w-full xxs:grid xxs:justify-center">
-                <div>
-                  <img class="xxs:m-auto xxs:py-5" src="svg/logo.svg"/>
-                </div>
-                <div class="flex justify-around items-center ml-auto xxs:grid xxs:justify-center">
-                  <div class="flex justify-around items-center ml-auto">
-                    <ul class="mx-28 sm:mx-5">
-                      <li class="footer-txt"style="color:#575F6F">
-                        <a href="#"> ფეხბურთი</a>
-                      </li>
-                      <li class="footer-txt" style="color:#575F6F">
-                        <a href="#">კალათბურთი</a>
-                      </li>
-                      <li class="footer-txt" style="color:#575F6F">
-                        <a href="#">რაგბი</a>
-                      </li>
-                    </ul>
-                    <ul class="mx-28 sm:mx-5" >
-                      <li class="footer-txt" style="color:#575F6F">
-                        <a href="#">სხვადასხვა</a>
-                      </li>
-                      <li class="footer-txt" style="color:#575F6F">
-                          <a href="#">ვიდეო</a>
-                      </li>
-                      <li class="footer-txt" style="color:#575F6F">
-                        <a href="#">  ტრანსფერები</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="flex space-x-4 xxs:justify-center xxs:py-5">
-                    <a  href="#">
-                      <img src="img/Social Network Icons.png"/>
-                    </a>
-                    <a  href="#">
-                      <img src="img/Instagram.png"/>
-                    </a>
-                    <a  href="#">
-                      <img src="img/Youtube.png"/>
-                    </a>
-                  </div>
+                  </nav>
                 </div>
               </div>
             </div>
-            <h2 class="text-sm leading-4 font-normal xxs:text-center xxs:pb-5" style="color: #98A0AF">საიტზე ყველა უფლება დაცულია. 2008-2020 Fanebi.com</h2>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="lg:container max-w-full px-4 mx-auto mt-5">
+      <div class="mt-2.5 grid-cols-2 grid gap-4 xs:grid-cols-1">
+        <div>
+          <div class="bg-white rounded">
+            <div class="carousel relative">
+              <div class="carousel-inner relative overflow-hidden">
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+                <div class="carousel-item absolute opacity-0">
+                  <div class="block ">
+                    <img class="xs:w-full w-full" src="img/Rectangle 7.png"/> 
+                    <div class="rounded h-1 w-24 bg-redPall m-auto relative bottom-px"></div>
+                  </div>
+                </div>
+                <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 left-0  mt-44 xxs:mt-28">‹</label>
+                <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 right-0  mt-44 xxs:mt-28">›</label>
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0" >
+                  <div class="block">
+                    <img class="xs:w-full w-full" src="img/Rectangle 7.png"/>
+                    <div class="rounded h-1 w-24 bg-redPall m-auto relative bottom-px"></div>
+                  </div>
+                </div>
+                <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 left-0  mt-44 xxs:mt-28">‹</label>
+                <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 right-0  mt-44 xxs:mt-28">›</label> 
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item absolute opacity-0">
+                  <div class="block">
+                    <img class="xs:w-full w-full" src="img/Rectangle 7.png"/> 
+                    <div class="rounded h-1 w-24 bg-redPall m-auto relative bottom-px"></div>
+                  </div>
+                </div>
+                <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 left-0  mt-44 xxs:mt-28">‹</label>
+                <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-2.5 absolute cursor-pointer hidden text-3xl font-thin text-white  rounded-full bg-dark backdrop-blur hover:bg-redPall-700 leading-tight text-center z-10 inset-y-0 right-0  mt-44 xxs:mt-28">›</label>
+                <h3 class="h-20 flex items-center justify-center text-xl m-auto text-center w-510 font-semibold sm:w-auto sm:text-base">
+                  ქართველი მსაჯები 21-წლამდე ევროპის ჩემპიონატის ფინალს იმსაჯებენ
+                </h3>
+                <ol class="carousel-indicators relative flex justify-center items-center">
+                  <li class="inline-block mr-3">
+                    <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-gray-200 hover:text-redPall-700">•</label>
+                  </li>
+                  <li class="inline-block mr-3">
+                    <label for="carousel-2" class="carousel-bullet focus:text-redPall carousel-bullet cursor-pointer block text-4xl text-gray-200 ">•</label>
+                  </li>
+                  <li class="inline-block mr-3">
+                    <label for="carousel-3" class="carousel-bullet focus:text-redPall carousel-bullet cursor-pointer block text-4xl text-gray-200">•</label>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4 xs:hidden">
+          <div class="grid grid-rows-2 gap-4">
+            <a href="#" class=" bg-white rounded">
+              <img class="h-38 w-full" src="img/Rectangle 20.png"/>
+              <h2 class="nav-title m-auto h-24 flex items-center p-5">ჯიჯოს შეეძლო ახალი მალდინი გამხდარიყო - იბრა გულდაწყვეტილია</h2>
+            </a>
+            <a href="#" class=" bg-white rounded">
+              <img class="h-38 w-full" src="img/Rectangle 20 (1).png"/>
+              <h2 class="nav-title m-auto h-24 flex items-center p-5">ოფიციალურად: ჟორჟინიო ვეინალდუმი პარი სენ-ჟერმენის ფეხბურთელია</h2>
+            </a>
+          </div>
+          <div class="grid grid-rows-2  gap-4">
+            <a href="#" class=" bg-white rounded">
+              <img class="h-38 w-full" src="img/Rectangle 20 (2).png"/>
+              <h2 class="nav-title m-auto h-24 flex items-center p-5">მბაპე პარიზიდან ვერ წავა? ნეიმარი კილიანის ტრანსფერს ბლოკავს</h2>
+            </a>
+            <a href="#" class=" bg-white rounded">
+              <img class="h-38 w-full" src="img/Rectangle 20 (3).png"/>
+              <h2 class="nav-title m-auto h-24 flex items-center p-5">ზედიზედ 2 მოგება პორტუგალიაში - ბოლქვაძე მეოთხედფინალშია</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-12">
+        <h1 class="section-text">ტოპ 10 სიახლე</h1>
+        <div class="flex border-b border-gray-300 pb-4 after:bg-red after:w-28 ">
+          <button class="mr-8 focus:outline-none ">
+            <h1 class="active-title">დღის სიახლეები</h1>
+          </button>
+          <button class="mr-8 focus:outline-none ">
+            <h1 class="section-title">კვირის სიახლეები</h1>
+          </button>
+        </div>
+        <div class="relative rounded-t w-32 bg-redPall h-1 bottom-1"></div>
+        <div class="my-8 grid grid-cols-5 xs:grid-cols-2 gap-8">
+          <a href="#">
+            <img class="h-38 w-full  rounded" src="img/Rectangle9.png"/>
+            <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">ჯიჯოს შეეძლო ახალი მალდინი გამხდარიყო - იბრა გულდაწყვეტილია</h2>
+          </a>
+          <a href="#">
+            <img class="h-38 w-full  rounded" src="img/Rectangle1.png"/>
+            <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">კვარაცხელია რუსეთის პრემიერლიგის საუკეთესო ახალგაზრდა ფეხბურთელად დაასახელეს</h2>
+          </a>
+          <a href="#">
+            <img class="h-38 w-full  rounded" src="img/Rectangle 9 (2).png"/>
+            <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">რეალის ფეხბურთელებისთვის შვებულება ადრე დასრულდება - ანჩელოტის ასე სურს</h2>
+          </a>
+          <a href="#">
+            <img class="h-38 w-full  rounded" src="img/Rectangle 9 (3).png"/>
+            <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">ფუტსალი | საქართველოს ნაკრების მეორე ტესტი და ფრე ლიეტუვასთან</h2>
+          </a>
+          <a href="#">
+            <img class="h-38 w-full  rounded" src="img/Rectangle 9 (4).png"/>
+            <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">ზაზა ნადირაძე ევროპის ჩემპიონატზე ოქროს მედლისთვის იბრძოლებს</h2>
+          </a>
+          <a href="#">
+            <img class="h-38 w-full  rounded" src="img/Rectangle 9 (5).png"/>
+            <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">უეფა: VAR სისტემით მიღებული გადაწყვეტილებების 94,5 პროცენტი ზუსტია</h2>
+          </a>
+          <a href="#">
+            <img class="h-38 w-full  rounded" src="img/Rectangle 9 (6).png"/>
+            <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">ჯიჯოს შეეძლო ახალი მალდინი გამხდარიყო - იბრა გულდაწყვეტილია</h2>
+          </a>
+          <a href="#">
+            <img class="h-38 w-full  rounded" src="img/Rectangle 9 (7).png"/>
+            <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">რუდიგერმა ჩემპიონთა ლიგის მოგების შემდეგ შვილს სახელად “თასი” დაარქვა (ფოტო)</h2>
+          </a>
+          <a href="#">
+            <img class="h-38 w-full  rounded" src="img/Rectangle 9 (8).png"/>
+            <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">ჯიჯოს შეეძლო ახალი მალდინი გამხდარიყო - იბრა გულდაწყვეტილია</h2>
+          </a>
+          <a href="#">
+            <img class="h-38 w-full  rounded" src="img/Rectangle 9 (9).png"/>
+            <h2 class="text-black mt-2.5 font-semibold leading-5 text-13 m-auto flex items-center">“ატლეტიკო” საულს 80 მილიონად ყიდის, შემცვლელი უკვე ნაპოვნია</h2>
+          </a>
+        </div>
+        <div class="hidden sm:block xs:block xxs:block sm:w-auto h-auto mb-12 sm:px-2.5 w-full">
+          <h2 class="section-text">ვიდეო</h2>
+          <div class="grid gap-8 grid-cols-2" id="mobVideos"></div>
+        </div>
+        <div class="flex justify-between sm:block xxs:block overflow-hidden">
+          <div class="mb-16 sm:px-2.5">
+            <h1 class="section-text">ბოლო სიახლეები</h1>
+            <div>
+              <div class="flex border-b border-gray-300 pb-4 after:bg-red after:w-28 ">
+                <button class="mr-8 md:mr-4 focus:outline-none ">
+                  <h1 class="active-title">ყველა</h1>
+                </button>
+                <button class="mr-8 md:mr-4 focus:outline-none ">
+                  <h1 class="section-title">ფეხბურთი</h1>
+                </button>
+                <button class="mr-8 md:mr-4 focus:outline-none ">
+                  <h1 class="section-title">კალათბურთი</h1>
+                </button>
+                <button class="mr-8 md:mr-4 focus:outline-none ">
+                  <h1 class="section-title">რაგბი</h1>
+                </button>
+                <button class="mr-8 md:mr-4 focus:outline-none ">
+                  <h1 class="section-title">სხვადასხვა</h1>
+                </button>
+                <button class="mr-8 md:mr-4 focus:outline-none ">
+                  <h1 class="section-title">ტრანსფერები</h1>
+                </button>
+              </div>
+              <div class="relative rounded-t w-32 bg-redPall h-1 bottom-1"></div>
+            </div>
+            <div>
+              <div class="grid">
+                <span id="all"></span>
+              </div>
+            </div>
+          </div>
+          <div class="sm:mx-2.5 ">
+            <div class="bg-white ml-auto w-26 sm:w-auto py-7 sm:px-2.5 sm:hidden xs:hidden">
+              <h2 class="section-text mt-4 ml-7">ვიდეო</h2>
+              <div class="grid">
+                <div class="grid gap-4 grid-cols-2" id="videos"></div>
+                <button class="bg-redPall rounded w-80 h-14 m-auto focus:outline-none my-11">
+                  <h2 class="text-white text-base flex items-center justify-center font-bold leading-4">ყველა ვიდეო</h2>
+                </button>
+              </div>
+            </div>
+            <div class="mt-24">
+              <h2 class="section-text mt-7">ვერბატიმი</h2>
+              <div class="bg-white w-26 sm:w-auto flex items-center justify-between rounded p-4 mb-5">
+                <div class="grid gap-y-4">
+                  <h2 class="nav-title">ლიონელ მესი</h2>
+                  <p class="verbatim-desc w-72 sm:w-auto">მიუნხენში ლოგიკური და გასაგები კონცეფცია აქვთ, ამიტომაცაა ბაიერნი დიდი გუნდი</p>
+                  <div class="flex items-center">
+                    <img class="mr-1.5" src="img/Clock.png"/>
+                    <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
+                  </div>
+                </div>
+                <img src="img/Ellipse 11.png"/>
+              </div>
+              <div class="bg-white w-26 sm:w-auto flex items-center justify-between rounded p-4 mb-5">
+                <div class="grid gap-y-4">
+                  <h2 class="nav-title">კილიან მბაპე</h2>
+                  <p class="verbatim-desc w-72 sm:w-auto">ლუკას ერნანდესმა მითხრა, რომ სწორედ ბაიერნში უნდა გადავიდე</p>
+                  <div class="flex items-center">
+                    <img class="mr-1.5" src="img/Clock.png"/>
+                    <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
+                  </div>
+                </div>
+                <img src="img/Ellipse 11 (1).png"/>
+              </div>
+              <div class="bg-white w-26 sm:w-auto flex items-center justify-between rounded p-4 mb-5">
+                <div class="grid gap-y-4">
+                  <h2 class="nav-title">ტომას მიულერი</h2>
+                  <p class="verbatim-desc w-72 sm:w-auto">ქართველებმა ფეხბურთის თამაში კარგად იციან, ეს ნიჭი ღმერთისგან აქვთ</p>
+                  <div class="flex items-center">
+                    <img class="mr-1.5" src="img/Clock.png"/>
+                    <h2 class="caption" style="color: #B2B2B2">3 საათის წინ</h2>
+                  </div>
+                </div>
+                <img src="img/Ellipse 11 (2).png"/>
+              </div>
+            </div>
+            <div class="bg-white my-24">
+              <img class="w-full" src="img/Rectangle 7 (1).png"/>
+              <h2 class="font-semibold text-black leading-6 text-base h-20 flex items-center justify-center">23 ივნისის დღის ფოტო</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="w-full h-3" style="background: #E6EAF0"></div>
+      <div  class="lg:container mx-auto h-56 grid items-center px-4  sm:px-2.5">
+        <div>
+          <div class="flex items-center">
+            <div class="flex items-start w-full xxs:grid xxs:justify-center">
+              <div>
+                <img class="xxs:m-auto xxs:py-5" src="svg/logo.svg"/>
+              </div>
+              <div class="flex justify-around items-center ml-auto xxs:grid xxs:justify-center">
+                <div class="flex justify-around items-center ml-auto">
+                  <ul class="mx-28 sm:mx-5">
+                    <li class="footer-txt"style="color:#575F6F">
+                      <a href="#"> ფეხბურთი</a>
+                    </li>
+                    <li class="footer-txt" style="color:#575F6F">
+                      <a href="#">კალათბურთი</a>
+                    </li>
+                    <li class="footer-txt" style="color:#575F6F">
+                      <a href="#">რაგბი</a>
+                    </li>
+                  </ul>
+                  <ul class="mx-28 sm:mx-5" >
+                    <li class="footer-txt" style="color:#575F6F">
+                      <a href="#">სხვადასხვა</a>
+                    </li>
+                    <li class="footer-txt" style="color:#575F6F">
+                      <a href="#">ვიდეო</a>
+                    </li>
+                    <li class="footer-txt" style="color:#575F6F">
+                      <a href="#">  ტრანსფერები</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex space-x-4 xxs:justify-center xxs:py-5">
+                  <a  href="#">
+                  <img src="img/Social Network Icons.png"/>
+                  </a>
+                  <a  href="#">
+                  <img src="img/Instagram.png"/>
+                  </a>
+                  <a  href="#">
+                  <img src="img/Youtube.png"/>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h2 class="text-sm leading-4 font-normal xxs:text-center xxs:pb-5" style="color: #98A0AF">საიტზე ყველა უფლება დაცულია. 2008-2020 Fanebi.com</h2>
+        </div>
       </div>
     </div>
   </body>
 </html>
-
 <script src="index.js"></script>
 <script
   src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
   defer
-></script>
+  ></script>
 <script src="js/all.js"></script>
 <script src="js/videos.js"></script>
 <script src="js/mobileVideoVersion.js"></script>

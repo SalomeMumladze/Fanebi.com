@@ -77,9 +77,9 @@ document.getElementById("all").innerHTML = newthings
     <img class="h-38 max-w-sm rounded-4 md:w-60 xxs:w-32" 
     src=${newthing.img}
   />
-<div class="h-auto w-96 grid items-center justify-center ml-6 md:w-80 sm:w-60 videoResSm:w-auto videoResSm:h-auto gap-2 xxs:w-full xxs:h-auto">
-  <h2 class="text-black font-semibold text-base xxs:w-auto">${newthing.title}</h2>
-  <h2 class="desc videoResSm:block xxs:hidden">${newthing.desc}</h2>
+<div class="h-auto w-96 grid items-center justify-center ml-6 md:w-80 sm:w-60 gap-2 xxs:w-full xxs:h-auto">
+  <h2 class="text-black font-semibold text-base">${newthing.title}</h2>
+  <h2 class="desc">${newthing.desc}</h2>
   <div class="flex items-center">
     <img class="mr-1.5 " src="img/Clock.png"/>
     <h2 class="caption" style="color: #B2B2B2">${newthing.caption}</h2>
