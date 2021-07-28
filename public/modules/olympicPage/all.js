@@ -71,13 +71,32 @@ document.getElementById("all").innerHTML = newthings
       src=${newthing.img}
     />
   <div class="h-auto grid items-center justify-center ml-6 gap-2">
-    <h2 class="text-black font-semibold text-base xxs:w-auto">${newthing.title}</h2>
-    <h2 class="desc videoResSm:block xxs:hidden">${newthing.desc}</h2>
+    <h2 class="text-black font-semibold text-base ">${newthing.title}</h2>
+    <h2 class="desc">${newthing.desc}</h2>
     <div class="flex items-center">
       <img class="mr-1.5 " src="../../img/Clock.png"/>
       <h2 class="caption" style="color: #B2B2B2">${newthing.caption}</h2>
-    </div>
+    </div>                                                                    
   </div>
   </a>`
   )
   .join("");
+
+document.addEventListener("DOMContentLoaded", function () {
+  const tabs = document.getElementsByClassName("tab");
+  for (let i = 0; i < tabs.length; i++) {
+    tabs[i].addEventListener("click", tabSwitch);
+  }
+
+  function tabSwitch() {
+    document
+      .getElementsByClassName("text-gray-900")[0]
+      .classList.remove("text-gray-900");
+    this.classList.add("text-gray-900");
+    document.getElementsByClassName("is-show")[0].classList.remove("is-show");
+    const arrayTabs = Array.prototype.slice.call(tabs);
+    const index = arrayTabs.indexOf(this);
+    document.getElementsByClassName("panel")[index].classList.add("is-show");
+  }
+});
+

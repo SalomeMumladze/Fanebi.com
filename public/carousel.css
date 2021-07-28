@@ -53,3 +53,14 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.panel {
+  display: none;
+}
+.panel.is-show {
+  display: block;
+}
+
+::-webkit-scrollbar {
+  width: 0px; display: none
+}

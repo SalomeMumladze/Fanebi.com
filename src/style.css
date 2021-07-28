@@ -19,6 +19,9 @@
   @apply text-redPall text-sm font-bold;
 }
 
+.active-tap {
+  @apply border-redPall  border-b-4
+}
 .input {
   @apply h-10 rounded py-0.5 px-2.5 flex justify-between;
 }
